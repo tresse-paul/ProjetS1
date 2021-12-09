@@ -1,0 +1,35 @@
+:root {
+    /* Color styles */
+    --white: #FFFFFF;
+    --cultured: #F5F6F8;
+    --platinium: #E3E8EB;
+    --space--cadet: #342A5B;
+    --xiketic: #0C0623;
+    --rich--black: #0A0A0A;
+    --russian--green: #659157;
+
+    /* Text-size styles */
+    /* base size: body (16px) */
+    --base: 1rem;
+    --titre--h1: 2.25rem;
+    --titre--h2: 1.25rem;
+    --titre---h3: 1.12rem;
+    --titre--h4: 1rem;
+    --titre--h5: 1.12rem;
+    --chapo: 1.25rem;
+    --base-bold: 1rem;
+    --figcaption: 0.75rem;
+    --small--text: 0.88rem;
+    --small--text-bold: 0.88rem;
+    --button: 1.56rem;
+
+    /* Font-family style */
+    --font-serif: 'Besley', serif;
+    --font-sans-serif: 'Karla', sans-serif;
+
+    /* Espace */
+    --space1x: 8px;
+    --space2x: 16px;
+    --space3x: 24px;
+    --space4x: 48px;
+}

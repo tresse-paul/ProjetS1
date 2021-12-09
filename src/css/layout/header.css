@@ -1,0 +1,20 @@
+.header {
+    background: inherit;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 80px;
+}
+
+.header__start {
+    display: flex;
+    align-items: center;
+}
+
+.header__end {
+    display: flex;
+}
