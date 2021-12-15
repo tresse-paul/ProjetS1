@@ -1,33 +1,37 @@
-.hero__img {
+.bg {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 80vh;
+    top: 10px;
+    z-index: -2;
 }
+
 .hero__header {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 20px;
-}
-
-
-
-.hero_subtitle {
-    font-family: var(--font-serif);
-    font-size: var(--titre--h2);
+    padding-top: 170px;
+    text-transform: uppercase;
+    text-align: center;
     color: var(--space--cadet);
-    font-weight: 500;
-    text-align: center;
 }
 
-.hero_definition{
-    background: var(--white);
+.hero__femmes {
+    position: absolute;
+    z-index: -1;
+    padding-top: 70px;
 }
 
-.hero_doubleScroll {
+.hero__definition {
+    background-color: var(--white);
+    margin: 205px 0px 0px 0px;
+    padding: 15px 10px 1px 10px;
+}
+
+.hero__subtitle {
     text-align: center;
+    color: var(--space--cadet);
+    font-size: var(--titre--h2);
+    font-weight: 600;
+    margin: 0;
+}
+
+.hero__doubleScroll {
+    margin: 25px;
+    padding-left: 40%;
 }

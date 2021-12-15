@@ -1,20 +1,19 @@
 .header {
-    background: inherit;
+    background-color: var(--cultured);
     position: fixed;
     top: 0;
-    left: 0px;
+    left: 0;
     width: 100%;
+    z-index: 2;
+    padding: 20px 10px 10px 10px;
     display: flex;
-    align-items: stretch;
     justify-content: space-between;
-    min-height: 80px;
-}
-
-.header__start {
-    display: flex;
-    align-items: center;
 }
 
 .header__end {
     display: flex;
+}
+
+.header__logo {
+    display: block;
 }

@@ -6,32 +6,3 @@ img {
 figure {
     margin: 0;
 }
-
-figcaption {
-    font-size: var(--figcaption);
-    color: var(--cultured);
-}
-
-.bg {
-    background-color: var(--cultured);
-    position: relative;
-    display: flex;
-}
-
-.bg::before {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.legende_image {
-    font-family: var(--font-serif);
-    font-size: var(--figcaption);
-    color: var(--cultured);
-    padding-left: 20px;
-    background-color: var(black);
-}
