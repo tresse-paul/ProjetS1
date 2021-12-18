@@ -1,0 +1,43 @@
+.article__title {
+    font-family: var(--font-serif);
+    font-size: var(--titre---h4);
+    color: var(--cultured);
+    padding-left: 10px;
+    min-height: 40px;
+    background-color: var(--space--cadet);
+    background-position-y: center;
+    align-content: center;
+    padding-top: 10px;
+}
+
+.article__tweet {
+    padding-left: 10px;
+    color: var(--rich--black);
+}
+
+.article__link {
+    min-height: 117px;
+    min-width: 153px;
+    background-color: var(--white);
+    text-decoration: none;
+    color: var(--russian--green);
+    font-size: var(--button);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 44px;
+}
+
+.article__interract--reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.article__image {
+    max-width: 223px;
+    height: auto;
+}
+
+.article__interract {
+    display: flex;
+}

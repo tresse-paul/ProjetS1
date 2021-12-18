@@ -25,3 +25,11 @@ h1 {
     padding: 0;
     margin: 0;
 }
+
+/* Bug IOS
+=> L'overflow doit être appliqué sur l'élément body ET html
+pour faire disparaître le scroll sur safari IOS */
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}

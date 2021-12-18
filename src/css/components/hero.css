@@ -1,5 +1,6 @@
 .bg {
     position: absolute;
+    width: 100%;
     top: 10px;
     z-index: -2;
 }

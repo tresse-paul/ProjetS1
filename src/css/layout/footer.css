@@ -20,11 +20,13 @@ footer a {
 }
 
 
-/* Les deux background qui composent et illustre le footer */
+/* Les deux images qui composent et illustre le footer */
 .footer__bg {
     position: absolute;
     z-index: -1;
     max-height: 287px;
+    width: 100%;
+
 }
 .footer__ilu {
     position: absolute;
@@ -44,6 +46,8 @@ footer a {
     padding-top: 130px;
 }
 
+
+/* Catégorie Contact */
 .footer__contact {
     margin: 0;
     text-transform: uppercase;
@@ -51,6 +55,7 @@ footer a {
     padding-left: 205px;
     flex-direction: row;
 }
+
 
 /* Catégorie "Me suivre" */
 .footer__social {

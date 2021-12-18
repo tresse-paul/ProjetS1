@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +8,15 @@
     <title>Féminéthique</title>
 
     <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
 <!-- Éléments visibles de la page web -->
 <body>
 
     <!-- HEADER : Regroupant le logo et le menu hamburger-->
-    <header class="header container">
+    <header class="header">
 
         <div class="header__start">
             <a href="/">
@@ -24,14 +26,16 @@
 
         <div class="header__end">
 
-            <button class="header__menu-btn menu-btn">
+            <button class="header__menu-btn menu-btn"
+                    @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
                 <span class="menu-btn__bar"></span>
               </button>
         
 
             <!--Menu principal-->
-            <nav class="header__menu menu">
-                <ul class="menu__list">
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
                     <li class="menu__item"><a class="menu__link" href="8mars.html">Se battre pour le 8 mars</a></li>
                     <li class="menu__item"><a class="menu__link" href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
@@ -69,29 +73,35 @@
             <img class="hero__doubleScroll" src="public/img/double_down_arrow.svg" alt="flèche vers le bas">
         </div>
 
-        <section class="section container">
+        <section class="section">
             <!-- Article : Se battre pour le 8 mars -->
             <article class="article"> 
-                <h3 class="article_title">Se battre pour le 8 mars</h3>
-                <p>Suivez l’histoire de Clara Zetkin, la femme qui s’est battue durant toute sa vie pour l’égalité des sexes, mais surtout pour cette date emblématique.</p>
-                <img class="article1_image" src="public/img/8_mars_article.png" alt="Un groupe de femme au regard lointain">
-                <a class="article_boutton" href="8mars.html">Lire</a>
+                <h3 class="article__title">Se battre pour le 8 mars</h3>
+                <p class="article__tweet">Suivez l’histoire de Clara Zetkin, la femme qui s’est battue durant toute sa vie pour l’égalité des sexes, mais surtout pour cette date emblématique.</p>
+                <div class="article__interract">
+                    <img class="article__image" src="public/img/8_mars_article.png" alt="Un groupe de femme au regard lointain">
+                    <a class="article__link" href="8mars.html">Lire</a>
+                </div>
             </article>
 
             <!-- Article : Les Suffragettes, réelle fiction féministe -->
-            <article class="article2">
-                <h3 class="article_title">Les Sufragettes, réelle fiction féministe</h3>
-                <p>Découvrez “Les Suffragettes”, inspiré de faits réels, revivez la vie de ces femmes qui ont tout perdu pour revendiquer leurs droits. Un drame historique, réalisé par Sarah Gavron, porté par Carrey Mulligan et Helena Bonham Carter.</p>
-                <img class="article2_image" src="public/img/les_suffragettes_article.png" alt="Image tirée du film Les Suffragettes">
-                <a class="article_boutton" href="suffragettes.html">Lire</a>
+            <article class="article">
+                <h3 class="article__title">Les Sufragettes, réelle fiction féministe</h3>
+                <p class="article__tweet">Découvrez “Les Suffragettes”, inspiré de faits réels, revivez la vie de ces femmes qui ont tout perdu pour revendiquer leurs droits. Un drame historique, réalisé par Sarah Gavron, porté par Carrey Mulligan et Helena Bonham Carter.</p>
+                <div class="article__interract article__interract--reverse">  
+                    <img class="article__image" src="public/img/les_suffragettes_article.png" alt="Image tirée du film Les Suffragettes">
+                    <a class="article__link" href="suffragettes.html">Lire</a>
+                </div>
             </article>
 
             <!-- Article : La plume comme arme -->
             <article class="article">
-                <h3 class="article_title">La plume comme arme</h3>
-                <p>Vivre pour exister, écrire pour dénoncer, voici Gloria Steinem. Son génie aide et suscite de l’espoir chez les féministes actuels.</p>
-                <img class="article3_image" src="public/img/Gloria_steinem_article.png" alt="Gloria Steinem pour la présentation de Ms.Magazine">
-                <a class="article_boutton" href="plume.html">Lire</a>
+                <h3 class="article__title">La plume comme arme</h3>
+                <p class="article__tweet">Vivre pour exister, écrire pour dénoncer, voici Gloria Steinem. Son génie aide et suscite de l’espoir chez les féministes actuels.</p>
+                <div class="article__interract">
+                    <img class="article__image" src="public/img/Gloria_steinem_article.png" alt="Gloria Steinem pour la présentation de Ms.Magazine">
+                    <a class="article__link" href="plume.html">Lire</a>
+                </div>
             </article>
         </section>
     
