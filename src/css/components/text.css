@@ -22,6 +22,7 @@
 .text__image--video {
     width: 100%;
     height: auto;
+    margin-bottom: 30px;
 }
 
 .text__legende {
@@ -40,6 +41,23 @@
     position: absolute;
     margin-top: -30px;
     }
+
+.text__legende--video {
+    background-color: var(--space--cadet);
+    color: var(--cultured);
+    font-size: var(--figcaption);
+    font-family: var(--font-serif);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-right: 30px;
+    padding-left: 10px;
+    min-height: 40px;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: -35px;
+}
 
 .text__quote {
     font-size: var(--base-bold);
