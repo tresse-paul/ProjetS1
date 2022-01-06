@@ -13,3 +13,13 @@
     margin-top: 100px;
     padding-left: 40px;
 }
+
+.top__title--color {
+    position: absolute;
+    z-index: 1;
+    padding-top: 50px;
+    font-style: var(--titre---h3);
+    color: var(--rich--black);
+    margin-top: 100px;
+    padding-left: 90px;
+}
