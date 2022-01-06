@@ -1,0 +1,15 @@
+.gallery__image {
+    transform: scale(0.9);
+}
+
+.gallery__legende {
+    font-size: var(--small--text-bold);
+    font-weight: normal;
+    text-align: center;
+}
+
+.gallery__title {
+    font-size: var(--small--text-bold);
+    font-weight: bold;
+    text-align: center;
+}

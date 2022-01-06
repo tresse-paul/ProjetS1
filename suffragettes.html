@@ -1,99 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Les Suffragettes, réelle fiction féministe</title>
+            
+    <title>Féminéthique</title>
+        
     <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
 <body>
 
-    <header>
-        <a href="/">
-            <img src="public/img/logo.svg" alt="Logo du site féminéthique">
-        </a>
-        <button>
-            <img src="public/img/hamburger.svg" alt="">
-        </button>
+    <!-- HEADER : Regroupant le logo et le menu hamburger-->
+    <header class="header">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="8mars.html">Se battre pour le 8 mars</a></li>
-                <li><a href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
-                <li><a href="plume.html">La plume comme arme</a></li>
-                <li><a href="glossaire.html">Glossaire</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="projets.html">Autres projets</a></li>
-            </ul>
-        </nav>
+      <div class="header__start">
+          <a href="/">
+            <img class="header__logo" src="public/img/logo.svg" alt="Logo du site féminéthique">
+          </a>
+      </div>
+
+      <div class="header__end">
+
+          <button class="header__menu-btn menu-btn"
+                  @click="menuIsOpen = !menuIsOpen"
+                  :class="menuIsOpen && 'menu-btn--open'">
+              <span class="menu-btn__bar"></span>
+            </button>
+      
+
+          <!--Menu principal-->
+          <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+              <ul class="menu__list list-unstyled">
+                  <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                  <li class="menu__item"><a class="menu__link" href="8mars.html">Se battre pour le 8 mars</a></li>
+                  <li class="menu__item"><a class="menu__link" href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
+                  <li class="menu__item"><a class="menu__link" href="plume.html">La plume comme arme</a></li>
+                  <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                  <li class="menu__item"><a class="menu__link" href="projets.html">Autres projets</a></li>
+              </ul>
+          </nav>
+          <!-- Fin du menu principal -->
+      </div>
     </header>
 
     <main>
 
         <!-- HEADER : Les Suffragettes, réelle fiction féministe -->
-        <div>
-          <h2>Les Sufragettes, réelle fiction féministe</h2>
-          <img src="public/img/header_suffragettes.jpg" alt="Affiche du film Les Suffragettes">
+        <div class="top">
+          <h2 class="top__title">Les Sufragettes, réelle fiction féministe</h2>
+          <img class="top__image" src="public/img/header_suffragettes.jpg" alt="Affiche du film Les Suffragettes">
         </div>
 
         <!-- Article de presse -->
-        <section>
-          <p>Les films ne sont pas que des fictions inventées de toute pièce. Oui, il existe des œuvres inspirées de faits réels et historiques. C’est le cas du film Les Suffragettes sorti en 2015. Inspirant, révoltant prônant une image d'espoir et de force.</p>
+        <section class="text">
+          <p class="text__chapo">Les films ne sont pas que des fictions inventées de toute pièce. Oui, il existe des œuvres inspirées de faits réels et historiques. C’est le cas du film Les Suffragettes sorti en 2015. Inspirant, révoltant prônant une image d'espoir et de force.</p>
           <figure>
-            <img src="public/img/bande_annonce.jpg" alt="Bande annonce du film Les Suffragettes">
-            <figcaption>Clara Zetkin au début des années 1930</figcaption>
+            <iframe src="https://www.youtube.com/watch?v=gc6Qo7yEPKscontrols=1" frameborder="0"></iframe>
+            <figcaption class="text__legende">Bande annonce VF du film "Les Suffragettes".</figcaption>
           </figure>
         
-          <h3>Une fiction inspirée du courage féminin</h3>
+          <h3 class="texte__title">Une fiction inspirée du courage féminin</h3>
           <p>Les Suffragettes, film incontournable de la réalisatrice Sarah Gavron. Avec d'illustres actrices telles que Helena Bonham Carter, Carey Mulligan ou encore Brendan Gleeson.
           <br><br> L’histoire se situe en Angleterre dans les années 1912, 1913, des femmes provenant de classes sociales différentes se révoltent. Ensemble, dans la violence et la peur, elles obtiennent les droits qu’elles revendiquent depuis des années. Maud Watts, personnage principal de cette intrigue, est une jeune femme sans problèmes qui travaille dans une blanchisserie. Un jour, elle se retrouve dans une émeute opposant la police aux suffragettes. C’est à ce moment qu’elle comprend que les choses peuvent changer. Sarah participe à un discours tenu par la femme d’un ministre. Elle participe aux différentes manifestations, lutte contre les forces de police et prend part à des actes violents. Bombardant les boîtes aux lettres, détruisant une résidence parlementaire, sa radicalisation lui fait tout perdre. Son mari l’expulse, son fils est adopté, seul compte les suffragettes. Plusieurs événements violents et tragiques menés par Emmeline Pankhurst permettront aux suffragettes d’obtenir le droit de vote.</p>
 
           <figure>
-          <img src="public/img/suffragettes.jpg" alt="Une suffragette portant un drapeau devant un groupe d'hommes">
-          <figcaption>Daisy Dugdale menant une manifestation de suffragettes à Londres le 19 décembre 1908.</figcaption>
+            <img class="text__image" src="public/img/suffragettes.jpg" alt="Une suffragette portant un drapeau devant un groupe d'hommes">
+            <figcaption class="text__legende">Daisy Dugdale menant une manifestation de suffragettes à Londres le 19 décembre 1908.</figcaption>
           </figure>
 
-          <h3>La violence pour atteindre la politique</h3>
+          <h3 class="text__title">La violence pour atteindre la politique</h3>
           <p>Le mouvement des suffragettes débute en 1832 en Grande-Bretagne. 19 ans plus tard, le droit de vote des femmes est seulement évoqué au parlement, sans succès. Suivi par des mouvements aux Etats-Unis, en France débutant au XIXème siècle. C’est là qu’intervient Emmeline Pankhurst, mise en avant dans le film. Emmeline fonde en 1903 la Women’s Social and Political Union. Il s’agit d’une organisation féministe luttant pour le droit de vote des femmes au Royaume-Uni. C’est à ce moment que le mouvement des suffragettes commence. Certaines femmes commencent à s’imposer durant diverses réunions politiques et finissent par être arrêtées. Les manifestations pacifiques fournissent aucun résultat, une autre stratégie doit être étudiée. Des mesures plus violentes, plus agressives sont employées. Les suffragettes commencent par incendier des institutions réservées aux hommes, jusqu'à poser des bombes. Ces bombes ont détruit l’abbaye de Westminster, la cathédrale Saint-Paul et beaucoup d'autres bâtiments. Mais il faut rappeler qu’en 1914 un événement mondial va bouleverser la marche des suffragettes. Les hommes sont envoyés au front et seules les femmes peuvent sauver le pays d’une pénurie de main-d'œuvre. Le mouvement des suffragettes mené par Emmeline et sa sœur Christabel impose un “cessez-le-feu”. L'après-guerre est un événement majeur remettant en question la place des femmes dans la société. Les actes de violences interne et externe au pays, malgré leur atrocité, portent leur fruit. Les suffragettes apportent leur revendication aux politiques qui votent en 1918 une loi accordant le droit de vote aux femmes.</p>
         
           <figure>
-          <img src="public/img/emmeline_pankhurst.jpg" alt="Emmeline Pankhurst arrêtée par deux policiers">
-          <figcaption>Emmeline Pankhurst, arrêtée par la police pour vandalisme.</figcaption>
+            <img class="text__image" src="public/img/emmeline_pankhurst.jpg" alt="Emmeline Pankhurst arrêtée par deux policiers">
+            <figcaption class="text__legende">Emmeline Pankhurst, arrêtée par la police pour vandalisme.</figcaption>
           </figure>
 
-          <blockquote>Le droit de vote pour les femmes est accordé en 1918, sous condition d’avoir au minimum 30 ans. C’est seulement en 1928 que les conditions changent et deviennent similaires aux droits des hommes, donc à l’âge de 21 ans.</blockquote>
+          <blockquote class="text__quote">Le droit de vote pour les femmes est accordé en 1918, sous condition d’avoir au minimum 30 ans. C’est seulement en 1928 que les conditions changent et deviennent similaires aux droits des hommes, donc à l’âge de 21 ans.</blockquote>
         
-          <h3>Chaque actes a son importance</h3>
+          <h3 class="text__title">Chaque actes a son importance</h3>
           <p>Si aujourd’hui encore beaucoup d'inégalités sont à abolir, les actes passés ne sont pas vains. Sarah Gavron en est un exemple. Réalisatrice britannique, elle n’est pas définie comme féministe, mais elle à jouer son rôle dans ce mouvement. Son talent n’est pas un hasard, récompensée 4 fois, notamment pour Les Suffragettes. Composé d’une équipe presque entièrement féminine, son film apporte un vrai sentiment de fierté. À l’image de Clara Zetkin ou de Gloria Steinem, chaque acte, peu importe l'ampleur, est un acte fort. Que l’implication soit politique, journalistique ou artistique, chaque personne a son rôle à jouer.</p>
         
-          <br><h4>À l’image des Suffragettes, découvrez des féministes qui à leur manière, ont fait changer les choses.</h4>
-          <img src="public/img/down_arrow.svg" alt="flèche pointant vers le bas">
+          <br><h4 class="text__titleh4">À l’image des Suffragettes, découvrez des féministes qui à leur manière, ont fait changer les choses.</h4>
+          <img class="hero__doubleScroll" src="public/img/down_arrow.svg" alt="flèche pointant vers le bas">
         </section>  
         
         <!-- Gallerie -->
         <section>
-          <h4>Gallerie des féministes</h4>
-          <img src="public/img/down_arrow.svg" alt="flèche pointant vers le bas">
+          <h4 class="text__titleh4--content">Gallerie des féministes</h4>
+          
+          <figure>
+            <img class="gallery__image" src="public/img/Christine de Pisan 1364 - 1430 1.jpg" alt="Portrait de Christine de Pisan">
+            <figcaption class="gallery__title">Christine de Pisan 1364 - 1430 <br> <p class="gallery__legende">Connue comme étant la première féministe Française avec son oeuvre  “La Cité des Dames”.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Olympe de Gouge 1748 - 1793 1.jpg" alt="Portrait de Olympe de Gouge">
+            <figcaption class="gallery__title">Olympe de Gouge 1748 - 1793 <br> <p class="gallery__legende"> Féministe et politique française ayant écrit “Déclaration des droits de la femme et de la citoyenne”.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Rose Scott 1847 - 1925 1.jpg" alt="Portrait de Rose Scott">
+            <figcaption class="gallery__title">Rose Scott 1847 - 1925 <br> <p class="gallery__legende">Féministe australienne, elle a mené un combat pour le droit des femmes.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Clara Zetkin 1857 - 1933 1.jpg" alt="Portrait de Clara Zetkin">
+            <figcaption class="gallery__title">Clara Zetkin 1857 - 1933 <br> <p class="gallery__legende"> Féministe allemande, elle est la première à proposé la date du 8 mars comme journée de la femme.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Emmeline Pankhurst 1858 - 1928 1.jpg" alt="Portrait de Emmeline Pankhurst">
+            <figcaption class="gallery__title">Emmeline Pankhurst 1858 - 1928 <br> <p class="gallery__legende"> Féministe et suffragette anglaise, elle est à la tête du mouvement des Suffragettes.</p></figcaption>
+          </figure>
+          
+          <figure>
+            <img class="gallery__image" src="public/img/Simone de Beauvoir 1908 - 1986 1.jpg" alt="Portrait de Simone de Beauvoir">
+            <figcaption class="gallery__title">Simone de Beauvoir 1908 - 1986 <br> <p class="gallery__legende"> Féministe française, elle devient une personnalité majeure de ce mouvement par la publication de son livre “Le Deuxième Sexe”.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Simone Veil 1927 - 2017 1.jpg" alt="Portrait de Simone Veil">
+            <figcaption class="gallery__title">Simone Veil 1927 - 2017 <br> <p class="gallery__legende"> Icône des femmes françaises, elle fait adopter la loi pour l’interruption volontaire de grossesse.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Angela Davis 1944 1.jpg" alt="Portrait de Angela Davis">
+            <figcaption class="gallery__title">Angela Davis 1944 <br> <p class="gallery__legende"> Activiste et féministe américaine luttant contre le racisme et les discriminations faites aux femmes. Son procès fait encore écho aujourd'hui.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Emma Watson 1990 1.jpg" alt="Portrait de Emma Watson">
+            <figcaption class="gallery__title">Emma Watson 1990 <br> <p class="gallery__legende"> Actrice, féministe et mannequin britannique. Connue pour ses rôles au cinéma, elle s’engage comme féministe durant son adolescence.</p></figcaption>
+          </figure>
+
+          <img class="hero__doubleScroll" src="public/img/down_arrow.svg" alt="flèche pointant vers le bas">
         </section>
         
         <!-- Section des articles -->
         <section>
-          <article> 
-            <h3>Se battre pour le 8 mars</h3>
-            <img src="public/img/8_mars_article.png" alt="Un groupe de femme au regard lointain">
-            <p>Suivez l’histoire de Clara Zetkin, la femme qui s’est battue durant toute sa vie pour l’égalité des sexes, mais surtout pour cette date emblématique.</p>
-            <a href="8mars.html">Lire</a>
+          <!-- Article : Se battre pour le 8 mars -->
+          <article class="card"> 
+            <h3 class="card__title">Se battre pour le 8 mars</h3>
+            <p class="card__tweet">Suivez l’histoire de Clara Zetkin, la femme qui s’est battue durant toute sa vie pour l’égalité des sexes, mais surtout pour cette date emblématique.</p>
+            <div class="card__interract">
+                <img class="card__image" src="public/img/8_mars_article.png" alt="Un groupe de femme au regard lointain">
+                <a class="card__link" href="8mars.html">Lire</a>
+            </div>
           </article>
           
-          <article>
-            <h3>La plume comme arme</h3>
-            <p>Vivre pour exister, écrire pour dénoncer, voici Gloria Steinem. Son génie aide et suscite de l’espoir chez les féministes actuels.</p>
-            <img src="public/img/Gloria_steinem_article.png" alt="Gloria Steinem pour la présentation de Ms.Magazine">
-            <a href="plume.html">Lire</a>
+          <!-- Article : La plume comme arme -->
+          <article class="card">
+            <h3 class="card__title">La plume comme arme</h3>
+            <p class="card__tweet">Vivre pour exister, écrire pour dénoncer, voici Gloria Steinem. Son génie aide et suscite de l’espoir chez les féministes actuels.</p>
+            <div class="card__interract">
+                <img class="card__image" src="public/img/Gloria_steinem_article.png" alt="Gloria Steinem pour la présentation de Ms.Magazine">
+                <a class="card__link" href="plume.html">Lire</a>
+            </div>
           </article>
         </section>
         

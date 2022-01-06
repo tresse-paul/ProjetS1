@@ -1,0 +1,15 @@
+.top__image {
+    position: absolute;
+    z-index: 0;
+    padding-top: 75px;
+}
+
+.top__title {
+    position: absolute;
+    z-index: 1;
+    padding-top: 50px;
+    font-style: var(--titre---h3);
+    color: var(--cultured);
+    margin-top: 100px;
+    padding-left: 30px;
+}

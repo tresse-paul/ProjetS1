@@ -1,4 +1,4 @@
-.article__title {
+.card__title {
     font-family: var(--font-serif);
     font-size: var(--titre---h4);
     color: var(--cultured);
@@ -8,14 +8,16 @@
     background-position-y: center;
     align-content: center;
     padding-top: 10px;
+    margin: 0;
 }
 
-.article__tweet {
+.card__tweet {
     padding-left: 10px;
     color: var(--rich--black);
+    margin: 10px 0px 10px 0px;
 }
 
-.article__link {
+.card__link {
     min-height: 117px;
     min-width: 153px;
     background-color: var(--white);
@@ -28,16 +30,17 @@
     padding-top: 44px;
 }
 
-.article__interract--reverse {
+.card__interract--reverse {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.article__image {
+.card__image {
     max-width: 223px;
     height: auto;
 }
 
-.article__interract {
+.card__interract {
     display: flex;
+    margin-bottom: 50px;
 }

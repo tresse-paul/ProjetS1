@@ -7,8 +7,12 @@
 body {
     background-color: var(--cultured);
     font-family: var(--font-sans-serif);
-    font-size: var(--base);
+    font-style: var(--base);
     color: var(--rich--black);
+}
+
+p {
+    margin: 0px 10px 25px 10px;
 }
 
 h1, h2 {

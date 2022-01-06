@@ -19,4 +19,7 @@
 /* Components */
 @import "components/menu.css";
 @import "components/hero.css";
-@import "components/articles.css";
+@import "components/cards.css";
+@import "components/top.css";
+@import "components/text.css";
+@import "components/gallery.css";
