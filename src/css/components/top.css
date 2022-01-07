@@ -23,3 +23,13 @@
     margin-top: 100px;
     padding-left: 90px;
 }
+
+.top__title--glossaire {
+    position: absolute;
+    z-index: 1;
+    padding-top: 50px;
+    font-style: var(--titre---h3);
+    color: var(--rich--black);
+    margin-top: 100px;
+    padding-left: 140px;
+}

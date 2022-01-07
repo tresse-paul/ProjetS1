@@ -1,61 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Glossaire</title>
+            
+    <title>Se battre pour le 8 mars</title>
+        
     <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
+
+<!-- Éléments visibles de la page web -->
 <body>
+    <!-- HEADER : Regroupant le logo et le menu hamburger-->
+    <header class="header">
 
-    <header>
+        <div class="header__start">
+            <a href="/">
+              <img class="header__logo" src="public/img/logo.svg" alt="Logo du site féminéthique">
+            </a>
+        </div>
 
-        <a href="/">
-          <img src="public/img/logo.svg" alt="Logo du site féminéthique">
-        </a>
-  
-        <button>
-          <img src="public/img/hamburger.svg" alt="Bouton du menu hamburger">
-        </button>
-  
-        <nav>
-          <ul>
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="8mars.html">Se battre pour le 8 mars</a></li>
-              <li><a href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
-              <li><a href="plume.html">La plume comme arme</a></li>
-              <li><a href="glossaire.html">Glossaire</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="projets.html">Autres projets</a></li>
-          </ul>
-        </nav>
-  
-      </header>
+        <div class="header__end">
+
+            <button class="header__menu-btn menu-btn"
+                    @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+              </button>
+        
+
+            <!--Menu principal-->
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                    <li class="menu__item"><a class="menu__link" href="8mars.html">Se battre pour le 8 mars</a></li>
+                    <li class="menu__item"><a class="menu__link" href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
+                    <li class="menu__item"><a class="menu__link" href="plume.html">La plume comme arme</a></li>
+                    <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">Autres projets</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </div>
+    </header>
 
     <main>
         <!-- HEADER : Glossaire -->
-        <div>
-            <h2>Glossaire</h2>
-            <img src="assets/img/header_glossaire.jpg" alt="Stylo plume posé sur une feuille de papier">
-            <p>Retrouvez ici les explications des mots les plus difficiles ou mal connus présent sur le site.</p>
-            <img src="assets/img/down_arrow.svg" alt="flèche pointant vers le bas">
+        <div class="top">
+            <h2 class="top__title--glossaire">Glossaire</h2>
+            <img class="top__image" src="public/img/header_glossaire.jpg" alt="Des femmes manifestants pour leurs droits">
         </div>
-
-        <!-- Contenu du glossaire -->
-        <section>
+            <!-- Contenu du glossaire -->
+        <section class="text">
+            <p class="text__chapo--glossaire">Retrouvez ici les explications des mots les plus difficiles ou mal connus présent sur le site.</p>
+        
             <p>
-            <strong>Féminisme :</strong>
-            <br> Le féminisme regroupe plusieurs mouvements servant à promouvoir l’égalité des sexes que ce soit en politique, économique ou bien même sociale et culturelle.
+            <strong class="text__glossaire">Féminisme :</strong>
+            <br> Le féminisme regroupe plusieurs mouvements servant à promouvoir l’égalité des sexes que ce soit en politique, économique ou bien même sociale et culturelle. <br><br>
             <strong>SPD :</strong>
-            <br> Il s'agit du parti social-démocrate Allemand apparut sous ce nom en 1875.
+            <br> Il s'agit du parti social-démocrate Allemand apparut sous ce nom en 1875. <br><br>
             <strong>Idéologie :</strong>
-            <br> Un ensemble d'idées propre à une culture qui permet d'orienter les mouvements que ce soit politique, religieux, économiques et d'autres.
+            <br> Un ensemble d'idées propre à une culture qui permet d'orienter les mouvements que ce soit politique, religieux, économiques et d'autres. <br><br>
             <strong>Suffragettes :</strong>
-            <br> Groupe de féministe luttant pour le droit de vote. Pariculièrement conue en angleterre
+            <br> Groupe de féministe luttant pour le droit de vote. Pariculièrement conue en angleterre <br><br>
             <strong>Revendiquer :</strong>
-            <br> s'imposer de manière forte pour réclamer ses droits.
+            <br> s'imposer de manière forte pour réclamer ses droits. <br><br>
             <strong>Patriarcat :</strong>
             <br> État d'esprit où l'homme détient l’autorité, il se définit comme unique et supérieur.</p>
         </section>

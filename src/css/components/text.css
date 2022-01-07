@@ -5,7 +5,13 @@
 .text__chapo {
     font-size: var(--chapo);
     font-style: italic;
-    padding: 40px 10px 0px 10px;
+    padding: 40px 10px 0px 0px;
+}
+
+.text__chapo--glossaire {
+    font-size: var(--base-bold);
+    font-weight: bold;
+    padding: 40px 10px 0px 0px;
 }
 
 .text__title {
@@ -89,4 +95,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.text__glossaire {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
 }
