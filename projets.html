@@ -1,48 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Autres projets</title>
+            
+    <title>Contactez-nous</title>
+        
     <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <header>
 
-        <a href="/">
-            <img src="assets/img/logo.svg" alt="Logo du site féminéthique">
-        </a>
+    <!-- HEADER : Regroupant le logo et le menu hamburger-->
+    <header class="header">
 
-        <button>
-            <img src="assets/img/hamburger.svg" alt="">
-        </button>
+      <div class="header__start">
+          <a href="/">
+            <img class="header__logo" src="public/img/logo.svg" alt="Logo du site féminéthique">
+          </a>
+      </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="8mars.html">Se battre pour le 8 mars</a></li>
-                <li><a href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
-                <li><a href="plume.html">La plume comme arme</a></li>
-                <li><a href="glossaire.html">Glossaire</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="projets.html">Autres projets</a></li>
-            </ul>
-        </nav>
+      <div class="header__end">
 
+          <button class="header__menu-btn menu-btn"
+                  @click="menuIsOpen = !menuIsOpen"
+                  :class="menuIsOpen && 'menu-btn--open'">
+              <span class="menu-btn__bar"></span>
+            </button>
+      
+
+          <!--Menu principal-->
+          <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+              <ul class="menu__list list-unstyled">
+                  <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                  <li class="menu__item"><a class="menu__link" href="8mars.html">Se battre pour le 8 mars</a></li>
+                  <li class="menu__item"><a class="menu__link" href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
+                  <li class="menu__item"><a class="menu__link" href="plume.html">La plume comme arme</a></li>
+                  <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                  <li class="menu__item"><a class="menu__link" href="projets.html">Autres projets</a></li>
+              </ul>
+          </nav>
+          <!-- Fin du menu principal -->
+      </div>
     </header>
 
     <main>
 
-        <div>
-            <h2>Autres projets</h2>
-            <img src="assets/img/header_autres_projets.jpg" alt="Des personnes coopérants">
-        </div>
+        <!-- HEADER : Autres Projets -->
+        <div class="top">
+            <h2 class="top__title--color">Autres projets</h2>
+            <img class="top__image" src="public/img/header_autres_projets.jpg" alt="Illustration de personnes travaillant ensemble">
+          </div>
 
-        <section>
-            <p>Retrouvez ici des projets traitant du même sujet, ayant une approche différente que ce soit par la thématique choisi ou bien par les œuvres sélectionnées. </p>
-            <img src="assets/img/down_arrow.svg" alt="flèche pointant vers le bas">
+        <section class="text">
+            <p class="text__chapo--alternate">Retrouvez ici des projets traitant du même sujet, ayant une approche différente que ce soit par la thématique choisi ou bien par les œuvres sélectionnées. </p>
+        
+            <div class="project__left">
+                <p class="project__title--left">Les femmes d'orient</p>
+            </div>
+
+            <div class="project__right">
+                <p class="project__title">L'évolution du féminisme</p>
+            </div>
+
+            <div class="project__left">
+                <p class="project__title--left">Femme pour toujours</p>
+            </div>
+
+            <div class="project__right">
+                <p class="project__title">Art visuel et féminisme</p>
+                <img src="public/img/Logo_Art_visuel_et_feminisme.svg" alt="Logo du site web : Art visuel et féminisme">
+            </div>
+
+            <div class="project__left">
+                <img src="public/img/La_scientifique_oubliee.svg" alt="Logo du site web : La femme, scientifique oubliée">
+                <p class="project__title--left">La femme, scientifique oubliée</p>
+            </div>
+
+            <div class="project__right">
+                <p class="project__title">Feminism-Discovery</p>
+                <img src="public/img/Feminism_discovery.svg" alt="Logo du site web : Feminism-Discovery">
+            </div>
+
+            <div class="project__left">
+                <p class="project__title--left">Women art Nation</p>
+            </div>
+
+            <div class="project__right">
+                <p class="project__title">A new look</p>
+                <img src="public/img/Logo_A_New_Look_.svg" alt="Logo du site web : A New Look">
+            </div>
+
+            <div class="project__left">
+                <p class="project__title--left">Kahlo</p>
+            </div>
         </section>
         
     </main>
