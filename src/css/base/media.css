@@ -3,6 +3,11 @@ img {
     height: auto;
 }
 
+video {
+    min-width: 100%;
+    height: auto;
+}
+
 figure {
     margin: 0;
 }
