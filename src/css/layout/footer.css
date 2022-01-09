@@ -82,6 +82,8 @@ footer a {
 .footer__title--contact {
     margin: 0;
     text-align: end;
+    margin-top: 17px;
+    margin-bottom: 17px;
 }
 
 

@@ -66,16 +66,22 @@
 
 .text__quote {
     font-size: var(--base-bold);
+    background-color: var(--space--cadet);
+    color: var(--white);
     font-weight: bold;
     text-align: center;
-    margin: 25px 10px 25px 10px;
+    margin: 25px 0px 25px 0px;
+    padding: 20px 10px 20px 10px;
 }
 
 .text__quote--gloria {
     font-size: var(--base-bold);
+    background-color: var(--space--cadet);
+    color: var(--white);
     font-weight: bold;
     text-align: center;
-    margin: 35px 10px 25px 10px;
+    margin: 45px 0px 25px 0px;
+    padding: 20px 10px 20px 10px;
 }
 
 .text__titleh4 {

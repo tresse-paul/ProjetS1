@@ -24,6 +24,10 @@ h1 {
     font-weight: 500;
 }
 
+em {
+    font-style: normal;
+}
+
 .list-unstyled {
     list-style: none;
     padding: 0;

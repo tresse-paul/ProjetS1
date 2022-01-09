@@ -107,6 +107,7 @@
     border: 0;
     border-right: solid 2px;
     border-right-color: var(--white);
+    font-weight: bold;
 }
 
 .button__fr--eng {
@@ -118,15 +119,19 @@
     border: 0;
     border-right: solid 2px;
     border-right-color: var(--white);
+    font-weight: bold;
 }
 
 #button__eng {
     color: var(--russian--green);
+    text-decoration: none;
     text-transform: uppercase;
     font-size: var(--titre--h2);
     font-family: var(--font-sans-serif);
     background: none;
     border: 0;
+    margin-left: 5px;
+    font-weight: bold;
 }
 
 .button__eng--eng {
@@ -136,4 +141,5 @@
     font-family: var(--font-sans-serif);
     background: none;
     border: 0;
+    font-weight: bold;
 }
