@@ -90,11 +90,12 @@
     color: var(--cultured);
     font-size: var(--titre--h4);
     font-family: var(--font-serif);
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 0px 0px;
+    padding-left: 10px;
     min-height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+
 }
 
 .text__glossaire {

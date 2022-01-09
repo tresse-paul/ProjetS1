@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+<html lang="eng" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            
-    <title>Se battre pour le 8 mars</title>
-        
+    
+    <title>Féminéthique</title>
+
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
@@ -14,11 +14,12 @@
 
 <!-- Éléments visibles de la page web -->
 <body>
+
     <!-- HEADER : Regroupant le logo et le menu hamburger-->
     <header class="header">
 
         <div class="header__start">
-            <a href="/">
+            <a href="index_eng.html">
               <img class="header__logo" src="public/img/logo.svg" alt="Logo du site féminéthique">
             </a>
         </div>
@@ -29,23 +30,23 @@
                     @click="menuIsOpen = !menuIsOpen"
                     :class="menuIsOpen && 'menu-btn--open'">
                 <span class="menu-btn__bar"></span>
-              </button>
+            </button>
         
 
             <!--Menu principal-->
             <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
                 <ul class="langage">
-                    <li class="langage__button"><button id="button__fr">fr</button></li>
-                    <li class="langage__button"> <a href="8mars_eng.html"><button id="button__eng">eng</button></a></li>
+                    <li class="langage__button"><a href="8mars.html"><button class="button__fr--eng">fr</button></li></a>
+                    <li class="langage__button"><button class="button__eng--eng">eng</button></a></li>
                 </ul>
                 <ul class="menu__list list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
-                    <li class="menu__item"><a class="menu__link" href="8mars.html">Se battre pour le 8 mars</a></li>
-                    <li class="menu__item"><a class="menu__link" href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
-                    <li class="menu__item"><a class="menu__link" href="plume.html">La plume comme arme</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index_eng.html">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="8mars_eng.html">Fighting for 8th March</a></li>
+                    <li class="menu__item"><a class="menu__link" href="suffragette_eng.html">The Suffragettes, real feminist fiction</a></li>
+                    <li class="menu__item"><a class="menu__link" href="plume.html">The pen as a weapon</a></li>
                     <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
                     <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
-                    <li class="menu__item"><a class="menu__link" href="projets.html">Autres projets</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">Other projects</a></li>
                 </ul>
             </nav>
             <!-- Fin du menu principal -->
@@ -56,35 +57,35 @@
 
         <!-- Header : Se battre pour le 8 mars -->
         <div id="scroll" class="top">
-            <h2 class="top__title">Se battre pour le 8 mars</h2>
+            <h2 class="top__title">Fighting for 8th March</h2>
             <img class="top__image" src="public/img/header_8_mars.jpg" alt="Des femmes manifestants pour leurs droits">
         </div>
 
         <!-- Article de presse -->
         <section class="text">
-            <p class="text__chapo">Clara Zetkin, figure politique socialiste et féministe du XIXème siècle, l’Allemande derrière la journée internationale des femmes du 8 mars. De son enfance entourée d’ouvrières, jusqu’à son combat contre le nazisme. Prônant les valeurs et les droits des femmes durant toute sa vie. C’est ainsi que Clara Zetkin devient un symbole et inspire le monde.</p>
+            <p class="text__chapo">Clara Zetkin, a 19th century socialist political and feminist figure, the German behind International Women's Day on 8th March. From her childhood surrounded by working-class women, to her fight against Nazism. Advocating women's values and rights throughout her life. This is how Clara Zetkin becomes a symbol and inspires the world.</p>
             
-            <h3 class="text__title">Clara Zetkin politicienne et féministe</h3>
-            <p>Durant son adolescence, Clara Zetkin participe régulièrement aux mouvements féministes notamment à l’Association générale des femmes allemandes. En plus de son implication aux mouvements féministes, une jeune camarade russe l’intègre à la communauté narodnik. Cette communauté socialiste-révolutionnaire est une période importante pour Clara, car elle rencontre Ossip Zetkin, qui par la suite devient son compagnon.</p>         
+            <h3 class="text__title">Clara Zetkin, politician and feminist</h3>
+            <p>During her teenage years, Clara Zetkin regularly participated in feminist movements, including the General Association of German Women. In addition to her involvement in feminist movements, a young Russian comrade integrated her into the narodnik community. This revolutionary socialist community was an important period for Clara, as she met Ossip Zetkin, who later became her companion.</p>         
             <figure>
                 <img class="text__image" src="public/img/clara_zetkin.jpg" alt="Clara Zetkin pointant son doigt vers le ciel.">
-                <figcaption class="text__legende">Clara Zetkin au début des années 1930</figcaption>
+                <figcaption class="text__legende">Clara Zetkin in the early 1930s</figcaption>
             </figure>
             <p> 
-                <br><br> Les années passent et Clara ne cesse de faire parler d’elle et de ses convictions. Que ce soit par le journal du SPD ou bien Der Sozialdemokrat, elle se fait entendre en Suisse et surtout par l’Union Suisse des Ouvrières, mouvement similaire aux “Suffragettes” en Angleterre. Sa renommée lui permet de participer à la Deuxième Internationale. Durant ce congrès, elle met en avant le travail des femmes, mais surtout leur place dans la lutte des classes.             
-                <br><br> En 1892, Clara Zetkin créé le journal Die Gleichheit (L’Égalité). Le journal a pour objectif de soutenir et d’aider  les femmes ouvrières concernant leurs conditions de travail. La situation se complique pour Clara et son mouvement, malgré la qualité de ses discours elle est critiquée et des tentatives de suppression de son parti sont envisagées. Pendant cette période de trouble, rien ne l’affecte et c’est à ce moment qu’elle organise la première conférence internationale des femmes socialistes à Stuttgart.
+                <br><br> The years passed and Clara never stopped talking about herself and her convictions. Whether through the SPD newspaper or Der Sozialdemokrat, she made herself heard in Switzerland and especially through the Swiss Union of Women Workers, a movement similar to the "Suffragettes" in England. Her fame enabled her to take part in the Second International Congress. During this congress, she highlighted women's work, but especially their place in the class struggle.             
+                <br><br> In 1892, Clara Zetkin founded the newspaper Die Gleichheit (Equality). The aim of the newspaper was to support and help working women with their working conditions. The situation became more complicated for Clara and her movement, despite the quality of her speeches she was criticised and attempts to suppress her party were considered. During this period of turmoil, nothing affected her and it was at this time that she organised the First International Conference of Socialist Women in Stuttgart.
             </p>
-            <blockquote class="text__quote">Ce congrès résonne dans le cœur des féministes, celles-ci consacrent Clara Zetkin présidente de l’Internationale socialiste des femmes. En 1910, elle est réélue et c’est à cette période qu’elle diffuse l’idée d’une Journée internationale des femmes. Période qui fait le lien avec les manifestations ouvrières Nord-Américaine. La date du 8 mars est fixée en 1977 par les Nations unies.</blockquote>
+            <blockquote class="text__quote">This congress resonated in the hearts of feminists, who made Clara Zetkin president of the Socialist International Women. In 1910 she was re-elected and it was during this period that she spread the idea of an International Women's Day. This period was linked to the North American workers' demonstrations. The date of 8th March was set in 1977 by the United Nations.</blockquote>
         
             <figure>
                 <img class="text__image" src="public/img/manif_russie.jpg" alt="Des femmes maifestants dans la rue, en Russie">
-                <figcaption class="text__legende">En Russie, le 8 mars 1917, des centaines de femmes manifestent dans la rue.</figcaption>
+                <figcaption class="text__legende">In Russia, on 8th March 1917, hundreds of women demonstrate in the streets</figcaption>
             </figure>
 
-            <h3 class="text__title">Une lutte éternelle pour valoir ses droits</h3>
-            <p>Si depuis toutes ces décennies, femmes et hommes ont lutté, c’est pour une raison qui doit être entendue de tous. Lorsque Clara Zetkin propose la Journée internationale des femmes, c’est pour obtenir le droit de vote pour toutes, mais pas seulement. Cette date évoque aussi l’égalité entre homme et femme. La France, l’Allemagne, l'Autriche et la Russie font partie des premiers pays à célébrer la Journée internationale de la femme.
-            <br><br> Durant toutes ses années, les mouvements féministes se sont développés dans le monde. Ces mouvements de lutte ne sont pas toujours restés sans conséquences, comme l’incendie du 25 mars où cent quarante ouvrières perdirent la vie enfermée dans une usine de textile. Le mouvement des suffragettes est également un tournant important pour les féministes. Il faut subir les conséquences de la Première Guerre mondiale pour que le peuple britannique remette en question la place des femmes employées à des postes masculins.
-            <br><br> Aujourd’hui l’idéologie de Clara Zetkin et notamment celle du 8 mars sont les mêmes. Des féministes tels que Michelle Obama ou Emma Watson jusqu’à Gloria Steinem sont les symboles de ce mouvement. L’accès à l’éducation pour les jeunes filles, l'égalité des sexes, l’égalité des droits sont leurs priorités. Ces actes doivent être quotidiens, symbole du 8 mars.</p>
+            <h3 class="text__title">An eternal struggle for rights</h3>
+            <p>If women and men have been fighting for decades, it is for a reason that must be heard by all. When Clara Zetkin proposed International Women's Day, it was to obtain the right to vote for all, but not only that. This date also evokes equality between men and women. France, Germany, Austria and Russia were among the first countries to celebrate International Women's Day.
+            <br><br> During all these years, feminist movements developed in the world. These movements of struggle were not always without consequences, such as the fire of 25 March when one hundred and forty women workers lost their lives locked in a textile factory. The suffragette movement was also an important turning point for feminists. It was not until the aftermath of the First World War that the British people questioned the place of women in male jobs.
+            <br><br> Today, Clara Zetkin's ideology and in particular that of 8th March are the same. Feminists from Michelle Obama and Emma Watson to Gloria Steinem are symbols of this movement. Access to education for young girls, gender equality, equal rights are their priorities. These acts must be daily, as a symbol of 8th March.</p>
         
         </section>
 
@@ -154,24 +155,23 @@
         </section>
 
         <!-- Cards -->
-        <section class="section">
             <!-- Article : Les Suffragettes, réelle fiction féministe -->
             <article class="card">
-                <h3 class="card__title">Les Sufragettes, réelle fiction féministe</h3>
-                <p class="card__tweet">Découvrez “Les Suffragettes”, inspiré de faits réels, revivez la vie de ces femmes qui ont tout perdu pour revendiquer leurs droits. Un drame historique, réalisé par Sarah Gavron, porté par Carrey Mulligan et Helena Bonham Carter.</p>
+                <h3 class="card__title">Suffragettes, a real feminist fiction</h3>
+                <p class="card__tweet">Discover "Suffragettes", inspired by real facts, relive the life of these women who lost everything to claim their rights. A historical drama, directed by Sarah Gavron, starring Carrey Mulligan and Helena Bonham Carter.</p>
                 <div class="card__interract card__interract--reverse">  
                     <img class="card__image" src="public/img/les_suffragettes_article.png" alt="Image tirée du film Les Suffragettes">
-                    <a class="card__link" href="suffragettes.html">Lire</a>
+                    <a class="card__link" href="suffragette_eng.html">Read</a>
                 </div>
             </article>
 
             <!-- Article : La plume comme arme -->
             <article class="card">
-                <h3 class="card__title">La plume comme arme</h3>
-                <p class="card__tweet">Vivre pour exister, écrire pour dénoncer, voici Gloria Steinem. Son génie aide et suscite de l’espoir chez les féministes actuels.</p>
+                <h3 class="card__title">The pen as a weapon</h3>
+                <p class="card__tweet">Living to exist, writing to denounce, this is how Gloria Steinem does it. Her genius helps and gives hope to feminists today.</p>
                 <div class="card__interract">
                     <img class="card__image" src="public/img/Gloria_steinem_article.png" alt="Gloria Steinem pour la présentation de Ms.Magazine">
-                    <a class="card__link" href="plume.html">Lire</a>
+                    <a class="card__link" href="plume.html">Read</a>
                 </div>
             </article>
         </section>
@@ -179,37 +179,39 @@
     </main>
 
     <!-- Footer du site-->
+
+    <!--Image papier déchiré au format jpg emboitant l'ensemble du footer-->
     <footer>
 
         <!--Image papier déchiré au format jpg emboitant l'ensemble du footer-->
         <img class="footer__bg" src="public/img/footer.png" alt="Papier déchiré">
         <!-- Image avec symbole féministe -->
         <img class="footer__ilu" src="public/img/symbol_feminist.png" alt="illustration d'un poing levé portant le symbole des féministes">
-        
-        <div class="footer__content">
-            <p class="footer__id">Paul Tresse <br> Groupe C2</p>
             
+        <div class="footer__content">
+            <p class="footer__id">Paul Tresse <br> C2 group</p>
+                
             <!--Section des réseaux sociaux Facebook et Instagram cliquable sour format d'icone-->
             <div class="footer__social">   
-                <h3 class="footer__title">Me suivre</h3>
+                <h3 class="footer__title">Find me here</h3>
                 <ul class="footer__list list-unstyled">
                     <li><a href="https://facebook.com"><i class="icon-facebook"></i></a></li>
                     <li><a href="https://instagram.com"><i class="icon-instagram"></i></a></li>
                 </ul>
             </div> 
-
-            
+    
+                
             <!--Mailto-->
             <div class="footer__contact">
                 <address>
-                <a class="footer__title" href="mailto:paul.tresse@edu.univ-fcomte.fr"><h3>Contactez-nous ici</h3></a>
+                <a class="footer__title" href="mailto:paul.tresse@edu.univ-fcomte.fr"><h3>Keep a contact</h3></a>
                 </address>
             </div>
-
+    
             <!--Texte de contextualisation avec un hyper en direction du site web MMI de Montbéliard-->
-            <p class="footer__condition">Projet réalisé dans le cadre d'une expérience pédagogique au <a href="http://mmimontbeliard.com/">département MMI de Montbéliard</a></p>
+            <p class="footer__condition">Project carried out as part of a pedagogical exercise in the <a href="http://mmimontbeliard.com/">MMI department of Montbéliard.</a></p>
         </div>
-        </footer>
+    </footer>
     
 </body>
 </html>

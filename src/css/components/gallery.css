@@ -1,15 +1,39 @@
+.carrousel {
+    width: 100vw;
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+    left: 0px;
+}
+
+.carrousel #track {
+    position: absolute;
+    display: inline-flex;
+    touch-action: none;
+}
+
+.carrousel #track .portrait {
+    width: 325px;
+}
+
+/* Portrait des féministes */
 .gallery__image {
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
-.gallery__legende {
-    font-size: var(--small--text-bold);
-    font-weight: normal;
-    text-align: center;
-}
-
+/* Titre donné aux portraits */
 .gallery__title {
     font-size: var(--small--text-bold);
     font-weight: bold;
     text-align: center;
+}
+
+/* Légende donnée aux portraits */
+.gallery__legende {
+    font-size: var(--small--text-bold);
+    font-weight: normal;
+    text-align: center;
+    width: 300px;
+    margin-left: 30px;
+    width: 260px;
 }

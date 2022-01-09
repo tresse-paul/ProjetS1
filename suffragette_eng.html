@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="eng" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Féminéthique</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<!-- Éléments visibles de la page web -->
+<body>
+
+    <!-- HEADER : Regroupant le logo et le menu hamburger-->
+    <header class="header">
+
+        <div class="header__start">
+            <a href="index_eng.html">
+              <img class="header__logo" src="public/img/logo.svg" alt="Logo du site féminéthique">
+            </a>
+        </div>
+
+        <div class="header__end">
+
+            <button class="header__menu-btn menu-btn"
+                    @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+        
+
+            <!--Menu principal-->
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="langage">
+                    <ul class="langage">
+                        <li class="langage__button"><a href="suffragette.html"><button class="button__fr--eng">fr</button></li></a>
+                        <li class="langage__button"><button class="button__eng--eng">eng</button></a></li>
+                    </ul>
+                    <ul class="menu__list list-unstyled">
+                      <li class="menu__item"><a class="menu__link" href="index_eng.html">Home</a></li>
+                      <li class="menu__item"><a class="menu__link" href="8mars_eng.html">Fighting for 8th March</a></li>
+                      <li class="menu__item"><a class="menu__link" href="suffragette_eng.html">The Suffragettes, real feminist fiction</a></li>
+                      <li class="menu__item"><a class="menu__link" href="plume.html">The pen as a weapon</a></li>
+                      <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
+                      <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                      <li class="menu__item"><a class="menu__link" href="projets.html">Other projects</a></li>
+                  </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HEADER : Les Suffragettes, réelle fiction féministe -->
+        <div id="scroll" class="top">
+          <h2 class="top__title">The Suffragettes, real feminist fiction</h2>
+          <img class="top__image" src="public/img/header_suffragettes.jpg" alt="Affiche du film Les Suffragettes">
+        </div>
+
+        <!-- Article de presse -->
+        <section class="text">
+          <p class="text__chapo">Films are not just made-up fictions. Yes, there are works inspired by real and historical facts. Such is the case with the 2015 film The Suffragettes. Inspiring, revolting, advocating an image of hope and strength.</p>
+          <figure>
+            <video class="text__image--video" controls width="250" src="public/video/Les_Suffragettes_BA.mp4" type=video/mp4 poster="public/img/les_suffragettes_BA_poster.jpg" preload="metadata" ></video>
+            <figcaption class="text__legende--video">French trailer of the film "Les Suffragettes" – 2015</figcaption>
+          </figure>
+        
+          <h3 class="text__title">A fiction inspired by women's courage</h3>
+          <p>The Suffragettes, a must-see film by director Sarah Gavron. With illustrious actresses such as Helena Bonham Carter, Carey Mulligan or Brendan Gleeson.
+          <br><br>The story is set in England in 1912 and 1913, when women from different social classes revolt. Together, in violence and fear, they obtain the rights they have been demanding for years. Maud Watts, the main character of this plot, is a young woman with no problems who works in a laundry. One day she finds herself in a riot between the police and the suffragettes. It is then that she realises that things can change. Sarah takes part in a speech given by a minister's wife. She takes part in various demonstrations, fights the police and takes part in violent acts. Bombing mailboxes, destroying a parliamentary residence, her radicalisation causes her to lose everything. Her husband evicts her, her son is adopted, only the suffragettes count. Several violent and tragic events led by Emmeline Pankhurst will allow the suffragettes to obtain the right to vote.</p>
+
+          <figure>
+            <img class="text__image" src="public/img/suffragettes.jpg" alt="Une suffragette portant un drapeau devant un groupe d'hommes">
+            <figcaption class="text__legende">Daisy Dugdale menant une manifestation de suffragettes à Londres le 19 décembre 1908.</figcaption>
+          </figure>
+
+          <h3 class="text__title">Violence to reach politicsThe suffragette movement started in 1832 in Great Britain. 19 years later, women's right to vote was only mentioned in parliament, without success. This was followed by movements in the United States and France beginning in the 19th century. This is where Emmeline Pankhurst, featured in the film, comes in. Emmeline founded the Women's Social and Political Union in 1903. This was a feminist organisation fighting for women's right to vote in the UK. This is when the suffragette movement began. Some women began to assert themselves at various political meetings and were eventually arrested. Peaceful demonstrations did not produce any results, so another strategy had to be considered. More violent, more aggressive measures are used. The suffragettes started by setting fire to men-only institutions, even planting bombs. These bombs destroyed Westminster Abbey, St Paul's Cathedral and many other buildings. But it must be remembered that in 1914 a world event was to take place. Disrupt the suffragette march. Men are sent to the front and only women can save the country from a labour shortage. The suffragette movement led by Emmeline and her sister Christabel imposed a 'ceasefire'. The post-war period was a major event that challenged the place of women in society. The acts of violence inside and outside the country, despite their atrocity, bore fruit. The suffragettes brought their demands to the attention of politicians who passed a law in 1918 giving women the right to vote.</p>
+        
+          <figure>
+            <img class="text__image" src="public/img/emmeline_pankhurst.jpg" alt="Emmeline Pankhurst arrêtée par deux policiers">
+            <figcaption class="text__legende">Emmeline Pankhurst arrested by the police after an act of vandalism</figcaption>
+          </figure>
+
+          <blockquote class="text__quote">The right to vote for women was granted in 1918, provided they were at least 30 years old. It was not until 1928 that the conditions changed to become similar to men's rights, i.e. at the age of 21.</blockquote>
+        
+          <h3 class="text__title">Every act has its importance</h3>
+          <p>While there is still much inequality to be overcome today, past acts are not in vain. Sarah Gavron is an example. A British director, she is not defined as a feminist, but she has played her part in this movement. Her talent is no accident, having won four awards, notably for The Suffragettes. With an almost entirely female cast, her film brings a real sense of pride. Like Clara Zetkin or Gloria Steinem, every act, no matter how big or small, is a strong act. Whether the involvement is political, journalistic or artistic, each person has a role to play.</p>
+        
+          <br><p class="text__titleh4">À l’image des Suffragettes, découvrez des féministes qui à leur manière, ont fait changer les choses.</p>
+        </section>  
+        
+        <!-- Gallerie -->
+        <section>
+          <h4 class="text__titleh4--content">Gallerie des féministes</h4>
+          
+          <figure>
+            <img class="gallery__image" src="public/img/Christine de Pisan 1364 - 1430 1.jpg" alt="Portrait de Christine de Pisan">
+            <figcaption class="gallery__title">Christine de Pisan 1364 - 1430 <br> <p class="gallery__legende">Connue comme étant la première féministe Française avec son oeuvre  “La Cité des Dames”.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Olympe de Gouge 1748 - 1793 1.jpg" alt="Portrait de Olympe de Gouge">
+            <figcaption class="gallery__title">Olympe de Gouge 1748 - 1793 <br> <p class="gallery__legende"> Féministe et politique française ayant écrit “Déclaration des droits de la femme et de la citoyenne”.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Rose Scott 1847 - 1925 1.jpg" alt="Portrait de Rose Scott">
+            <figcaption class="gallery__title">Rose Scott 1847 - 1925 <br> <p class="gallery__legende">Féministe australienne, elle a mené un combat pour le droit des femmes.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Clara Zetkin 1857 - 1933 1.jpg" alt="Portrait de Clara Zetkin">
+            <figcaption class="gallery__title">Clara Zetkin 1857 - 1933 <br> <p class="gallery__legende"> Féministe allemande, elle est la première à proposé la date du 8 mars comme journée de la femme.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Emmeline Pankhurst 1858 - 1928 1.jpg" alt="Portrait de Emmeline Pankhurst">
+            <figcaption class="gallery__title">Emmeline Pankhurst 1858 - 1928 <br> <p class="gallery__legende"> Féministe et suffragette anglaise, elle est à la tête du mouvement des Suffragettes.</p></figcaption>
+          </figure>
+          
+          <figure>
+            <img class="gallery__image" src="public/img/Simone de Beauvoir 1908 - 1986 1.jpg" alt="Portrait de Simone de Beauvoir">
+            <figcaption class="gallery__title">Simone de Beauvoir 1908 - 1986 <br> <p class="gallery__legende"> Féministe française, elle devient une personnalité majeure de ce mouvement par la publication de son livre “Le Deuxième Sexe”.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Simone Veil 1927 - 2017 1.jpg" alt="Portrait de Simone Veil">
+            <figcaption class="gallery__title">Simone Veil 1927 - 2017 <br> <p class="gallery__legende"> Icône des femmes françaises, elle fait adopter la loi pour l’interruption volontaire de grossesse.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Angela Davis 1944 1.jpg" alt="Portrait de Angela Davis">
+            <figcaption class="gallery__title">Angela Davis 1944 <br> <p class="gallery__legende"> Activiste et féministe américaine luttant contre le racisme et les discriminations faites aux femmes. Son procès fait encore écho aujourd'hui.</p></figcaption>
+          </figure>
+
+          <figure>
+            <img class="gallery__image" src="public/img/Emma Watson 1990 1.jpg" alt="Portrait de Emma Watson">
+            <figcaption class="gallery__title">Emma Watson 1990 <br> <p class="gallery__legende"> Actrice, féministe et mannequin britannique. Connue pour ses rôles au cinéma, elle s’engage comme féministe durant son adolescence.</p></figcaption>
+          </figure>
+
+          <a href="#scroll">
+            <img class="hero__doubleScroll--reverse" src="public/img/down_arrow.svg" alt="flèche pointant vers le bas">
+          </a>
+        </section>
+        
+        <!-- Section des articles -->
+        <section>
+
+            <article class="card">
+                <h3 class="card__title">Fighting for 8th March</h3>
+                <p class="card__tweet">Follow the story of Clara Zetkin, the woman who fought her whole life for gender equality, but above all for this emblematic date.</p>
+                <div class="card__interract">
+                    <img class="card__image" src="public/img/8_mars_article.png" alt="Un groupe de femme au regard lointain">
+                    <a class="card__link" href="8mars.html">Read</a>
+                </div>
+            </article>
+            <article class="card">
+                <h3 class="card__title">The pen as a weapon</h3>
+                <p class="card__tweet">Living to exist, writing to denounce, this is how Gloria Steinem does it. Her genius helps and gives hope to feminists today.</p>
+                <div class="card__interract">
+                    <img class="card__image" src="public/img/Gloria_steinem_article.png" alt="Gloria Steinem pour la présentation de Ms.Magazine">
+                    <a class="card__link" href="plume.html">Read</a>
+                </div>
+            </article>
+        </section>
+        
+    </main>
+
+    <!-- Footer du site-->
+    <footer>
+
+        <!--Image papier déchiré au format jpg emboitant l'ensemble du footer-->
+        <img class="footer__bg" src="public/img/footer.png" alt="Papier déchiré">
+        <!-- Image avec symbole féministe -->
+        <img class="footer__ilu" src="public/img/symbol_feminist.png" alt="illustration d'un poing levé portant le symbole des féministes">
+        
+        <div class="footer__content">
+            <p class="footer__id">Paul Tresse <br> C2 group</p>
+            
+            <!--Section des réseaux sociaux Facebook et Instagram cliquable sour format d'icone-->
+            <div class="footer__social">   
+                <h3 class="footer__title">Find me here</h3>
+                <ul class="footer__list list-unstyled">
+                    <li><a href="https://facebook.com"><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://instagram.com"><i class="icon-instagram"></i></a></li>
+                </ul>
+            </div> 
+
+            
+            <!--Mailto-->
+            <div class="footer__contact">
+                <address>
+                <a class="footer__title" href="mailto:paul.tresse@edu.univ-fcomte.fr"><h3>Keep a contact</h3></a>
+                </address>
+            </div>
+
+            <!--Texte de contextualisation avec un hyper en direction du site web MMI de Montbéliard-->
+            <p class="footer__condition">Project carried out as part of a pedagogical exercise in the <a href="http://mmimontbeliard.com/">MMI department of Montbéliard.</a></p>
+        </div>
+        </footer>
+    
+</body>
+</html>

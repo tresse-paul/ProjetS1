@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+<html lang="eng" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <script src="src/js/function.js"></script>
 </head>
 
 <!-- Éléments visibles de la page web -->
@@ -20,7 +19,7 @@
     <header class="header">
 
         <div class="header__start">
-            <a href="/">
+            <a href="index_eng.html">
               <img class="header__logo" src="public/img/logo.svg" alt="Logo du site féminéthique">
             </a>
         </div>
@@ -37,17 +36,17 @@
             <!--Menu principal-->
             <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
                 <ul class="langage">
-                    <li class="langage__button"><button id="button__fr">fr</button></li>
-                    <li class="langage__button"> <a href="index_eng.html"><button id="button__eng">eng</button></a></li>
+                    <li class="langage__button"><a href="index.html"><button class="button__fr--eng">fr</button></li></a>
+                    <li class="langage__button"><button class="button__eng--eng">eng</button></a></li>
                 </ul>
                 <ul class="menu__list list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
-                    <li class="menu__item"><a class="menu__link" href="8mars.html">Se battre pour le 8 mars</a></li>
-                    <li class="menu__item"><a class="menu__link" href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
-                    <li class="menu__item"><a class="menu__link" href="plume.html">La plume comme arme</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index_eng.html">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="8mars_eng.html">Fighting for 8th March</a></li>
+                    <li class="menu__item"><a class="menu__link" href="suffragette_eng.html">The Suffragettes, real feminist fiction</a></li>
+                    <li class="menu__item"><a class="menu__link" href="plume.html">The pen as a weapon</a></li>
                     <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
                     <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
-                    <li class="menu__item"><a class="menu__link" href="projets.html">Autres projets</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">Other projects</a></li>
                 </ul>
             </nav>
             <!-- Fin du menu principal -->
@@ -66,8 +65,8 @@
             <img class="hero__femmes" src="public/img/femme_chaine.png" alt="Des femmes se tenant les mains, formant une chaîne">
             
             <div class="hero__definition">
-                <h2 class="hero__subtitle">Féminisme</h2>
-                <p>Le féminisme est présent au quotidien, on y est tous acteur de près ou de loin. Ce mouvement présent sous différentes formes se mesure à l’échelle mondiale, présent depuis des siècles. Il peut apparaître comme un sujet sensible à éviter, mais bien au contraire, il faut en parler. Des personnes se sont impliquées corps et âme pour faire valoir leurs droits. En passant par la politique, la littérature et les médias, il est nécessaire de mettre en avant cette idéologie trop souvent dénigrée.</p>
+                <h2 class="hero__subtitle">Feminism</h2>
+                <p>Feminism is present in our daily lives, we are all involved in it in one way or another. This movement, present in various forms, is measured on a global scale and has been present for centuries. It may seem like a sensitive subject to be avoided, but on the contrary, it should be talked about. People have put their heart and soul into their rights. Through politics, literature and the media, it is necessary to highlight this ideology that is too often denigrated.</p>
             </div>
 
             <div class="hero__img bg">
@@ -84,31 +83,31 @@
         
             <!-- Article : Se battre pour le 8 mars -->
             <article class="card">
-                <h3 class="card__title">Se battre pour le 8 mars</h3>
-                <p class="card__tweet">Suivez l’histoire de Clara Zetkin, la femme qui s’est battue durant toute sa vie pour l’égalité des sexes, mais surtout pour cette date emblématique.</p>
+                <h3 class="card__title">Fighting for 8th March</h3>
+                <p class="card__tweet">Follow the story of Clara Zetkin, the woman who fought her whole life for gender equality, but above all for this emblematic date.</p>
                 <div class="card__interract">
                     <img class="card__image" src="public/img/8_mars_article.png" alt="Un groupe de femme au regard lointain">
-                    <a class="card__link" href="8mars.html">Lire</a>
+                    <a class="card__link" href="8mars.html">Read</a>
                 </div>
             </article>
 
             <!-- Article : Les Suffragettes, réelle fiction féministe -->
             <article class="card">
-                <h3 class="card__title">Les Sufragettes, réelle fiction féministe</h3>
-                <p class="card__tweet">Découvrez “Les Suffragettes”, inspiré de faits réels, revivez la vie de ces femmes qui ont tout perdu pour revendiquer leurs droits. Un drame historique, réalisé par Sarah Gavron, porté par Carrey Mulligan et Helena Bonham Carter.</p>
+                <h3 class="card__title">Suffragettes, a real feminist fiction</h3>
+                <p class="card__tweet">Discover "Suffragettes", inspired by real facts, relive the life of these women who lost everything to claim their rights. A historical drama, directed by Sarah Gavron, starring Carrey Mulligan and Helena Bonham Carter.</p>
                 <div class="card__interract card__interract--reverse">  
                     <img class="card__image" src="public/img/les_suffragettes_article.png" alt="Image tirée du film Les Suffragettes">
-                    <a class="card__link" href="suffragettes.html">Lire</a>
+                    <a class="card__link" href="suffragettes.html">Read</a>
                 </div>
             </article>
 
             <!-- Article : La plume comme arme -->
             <article class="card">
-                <h3 class="card__title">La plume comme arme</h3>
-                <p class="card__tweet">Vivre pour exister, écrire pour dénoncer, voici Gloria Steinem. Son génie aide et suscite de l’espoir chez les féministes actuels.</p>
+                <h3 class="card__title">The pen as a weapon</h3>
+                <p class="card__tweet">Living to exist, writing to denounce, this is how Gloria Steinem does it. Her genius helps and gives hope to feminists today.</p>
                 <div class="card__interract">
                     <img class="card__image" src="public/img/Gloria_steinem_article.png" alt="Gloria Steinem pour la présentation de Ms.Magazine">
-                    <a class="card__link" href="plume.html">Lire</a>
+                    <a class="card__link" href="plume.html">Read</a>
                 </div>
             </article>
         </section>
@@ -124,11 +123,11 @@
         <img class="footer__ilu" src="public/img/symbol_feminist.png" alt="illustration d'un poing levé portant le symbole des féministes">
         
         <div class="footer__content">
-            <p class="footer__id">Paul Tresse <br> Groupe C2</p>
+            <p class="footer__id">Paul Tresse <br> C2 group</p>
             
             <!--Section des réseaux sociaux Facebook et Instagram cliquable sour format d'icone-->
             <div class="footer__social">   
-                <h3 class="footer__title">Me suivre</h3>
+                <h3 class="footer__title">Find me here</h3>
                 <ul class="footer__list list-unstyled">
                     <li><a href="https://facebook.com"><i class="icon-facebook"></i></a></li>
                     <li><a href="https://instagram.com"><i class="icon-instagram"></i></a></li>
@@ -139,12 +138,12 @@
             <!--Mailto-->
             <div class="footer__contact">
                 <address>
-                <a class="footer__title" href="mailto:paul.tresse@edu.univ-fcomte.fr"><h3>Contactez-nous ici</h3></a>
+                <a class="footer__title" href="mailto:paul.tresse@edu.univ-fcomte.fr"><h3>Keep a contact</h3></a>
                 </address>
             </div>
 
             <!--Texte de contextualisation avec un hyper en direction du site web MMI de Montbéliard-->
-            <p class="footer__condition">Projet réalisé dans le cadre d'une expérience pédagogique au <a href="http://mmimontbeliard.com/">département MMI de Montbéliard</a></p>
+            <p class="footer__condition">Project carried out as part of a pedagogical exercise in the <a href="http://mmimontbeliard.com/">MMI department of Montbéliard.</a></p>
         </div>
         </footer>
 
