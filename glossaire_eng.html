@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Féminéthique</title>
+    <title>Glossary</title>
 
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Chargement de la librairie Alpine JS -->
@@ -36,7 +36,7 @@
             <!--Menu principal-->
             <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
                 <ul class="langage">
-                    <li class="langage__button"><a href="index.html"><button class="button__fr--eng">fr</button></li></a>
+                    <li class="langage__button"><a href="glossaire.html"><button class="button__fr--eng">fr</button></li></a>
                     <li class="langage__button"><button class="button__eng--eng">eng</button></a></li>
                 </ul>
                 <ul class="menu__list list-unstyled">
@@ -53,70 +53,36 @@
         </div>
     </header>
 
-
     <main>
-
-        <!-- Éléments d'introduction -->
-        <div class="hero container">
-            <div class="hero__header">
-                <h1 class="hero__title">Féminéthique</h1>
-            </div>
-
-            <img class="hero__femmes" src="public/img/femme_chaine.png" alt="Des femmes se tenant les mains, formant une chaîne">
-            
-            <div class="hero__definition">
-                <h2 class="hero__subtitle">Feminism</h2>
-                <p>Feminism is present in our daily lives, we are all involved in it in one way or another. This movement, present in various forms, is measured on a global scale and has been present for centuries. It may seem like a sensitive subject to be avoided, but on the contrary, it should be talked about. People have put their heart and soul into their rights. Through politics, literature and the media, it is necessary to highlight this ideology that is too often denigrated.</p>
-            </div>
-
-            <div class="hero__img bg">
-                <img src="public/img/bg_header.png" alt="Les lettres F & É">
-            </div>
-                <div id="scroll">
-                    <a href="#scroll">
-                        <img class="hero__doubleScroll" src="public/img/double_down_arrow.svg" alt="flèche vers le bas">
-                    </a>
-                </div>
+        <!-- HEADER : Glossaire -->
+        <div class="top">
+            <h2 class="top__title--glossaire">Glossary</h2>
+            <img class="top__image" src="public/img/header_glossaire.jpg" alt="Des femmes manifestants pour leurs droits">
         </div>
-
-            <section class="section">
+            <!-- Contenu du glossaire -->
+        <section class="text">
+            <p class="text__chapo--alternate">Find here the definitions of complex words.</p>
         
-            <!-- Article : Se battre pour le 8 mars -->
-            <article class="card">
-                <h3 class="card__title">Fighting for 8th March</h3>
-                <p class="card__tweet">Follow the story of Clara Zetkin, the woman who fought her whole life for gender equality, but above all for this emblematic date.</p>
-                <div class="card__interract">
-                    <img class="card__image" src="public/img/8_mars_article.png" alt="Un groupe de femme au regard lointain">
-                    <a class="card__link" href="8mars.html">Read</a>
-                </div>
-            </article>
-
-            <!-- Article : Les Suffragettes, réelle fiction féministe -->
-            <article class="card">
-                <h3 class="card__title">Suffragettes, a real feminist fiction</h3>
-                <p class="card__tweet">Discover "Suffragettes", inspired by real facts, relive the life of these women who lost everything to claim their rights. A historical drama, directed by Sarah Gavron, starring Carrey Mulligan and Helena Bonham Carter.</p>
-                <div class="card__interract card__interract--reverse">  
-                    <img class="card__image" src="public/img/les_suffragettes_article.png" alt="Image tirée du film Les Suffragettes">
-                    <a class="card__link" href="suffragettes.html">Read</a>
-                </div>
-            </article>
-
-            <!-- Article : La plume comme arme -->
-            <article class="card">
-                <h3 class="card__title">The pen as a weapon</h3>
-                <p class="card__tweet">Living to exist, writing to denounce, this is how Gloria Steinem does it. Her genius helps and gives hope to feminists today.</p>
-                <div class="card__interract">
-                    <img class="card__image" src="public/img/Gloria_steinem_article.png" alt="Gloria Steinem pour la présentation de Ms.Magazine">
-                    <a class="card__link" href="plume.html">Read</a>
-                </div>
-            </article>
+            <p>
+            <strong class="text__glossaire">Feminism :</strong>
+            <br>Feminism regroups several movements promoting gender equality, in politics, economics or even social and cultural.<br><br>
+            <strong>SPD :</strong>
+            <br>This is the German social democratic party which appeared under this name in 1875.<br><br>
+            <strong>Ideology :</strong>
+            <br>A set of ideas specific to a culture that helps to guide movements, it political, religious, economic or other.<br><br>
+            <strong>Suffragettes :</strong>
+            <br>A group of feminists fighting for the right to vote in England.<br><br>
+            <strong>Claim :</strong>
+            <br>To impose himself in a strong way to claim one's rights.<br><br>
+            <strong>Patriarchy :</strong>
+            <br>A state of mind where the man holds the authority, he defines himself as unique and superior.</p>
         </section>
-    
+        
     </main>
 
     <!-- Footer du site-->
     <footer>
-        
+
         <!--Image papier déchiré au format jpg emboitant l'ensemble du footer-->
         <img class="footer__bg" src="public/img/footer.png" alt="Papier déchiré">
         <!-- Image avec symbole féministe -->
@@ -145,8 +111,7 @@
             <!--Texte de contextualisation avec un hyper en direction du site web MMI de Montbéliard-->
             <p class="footer__condition">Project carried out as part of a pedagogical exercise in the <a href="http://mmimontbeliard.com/">MMI department of Montbéliard.</a></p>
         </div>
-    </footer>
-
+        </footer>
+    
 </body>
-
 </html>

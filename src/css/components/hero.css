@@ -1,7 +1,7 @@
 .bg {
     position: absolute;
     width: 100%;
-    top: 10px;
+    top: 0px;
     z-index: -2;
 }
 
@@ -15,12 +15,12 @@
 .hero__femmes {
     position: absolute;
     z-index: -1;
-    padding-top: 70px;
+    padding-top: 30px;
 }
 
 .hero__definition {
     background-color: var(--white);
-    margin: 205px 0px 0px 0px;
+    margin: 160px 0px 0px 0px;
     padding: 15px 10px 1px 0px;
 }
 
@@ -29,7 +29,7 @@
     color: var(--space--cadet);
     font-size: var(--titre--h2);
     font-weight: 600;
-    margin: 0;
+    margin: 0px 0px 10px 0px;
 }
 
 .hero__doubleScroll {

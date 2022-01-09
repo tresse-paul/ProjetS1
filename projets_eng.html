@@ -1,66 +1,68 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+<html lang="eng" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            
-    <title>Contactez-nous</title>
-        
+    
+    <title>Féminéthique</title>
+
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
+
+<!-- Éléments visibles de la page web -->
 <body>
 
     <!-- HEADER : Regroupant le logo et le menu hamburger-->
     <header class="header">
 
-      <div class="header__start">
-          <a href="/">
-            <img class="header__logo" src="public/img/logo.svg" alt="Logo du site féminéthique">
-          </a>
-      </div>
+        <div class="header__start">
+            <a href="index_eng.html">
+              <img class="header__logo" src="public/img/logo.svg" alt="Logo du site féminéthique">
+            </a>
+        </div>
 
-      <div class="header__end">
+        <div class="header__end">
 
-          <button class="header__menu-btn menu-btn"
-                  @click="menuIsOpen = !menuIsOpen"
-                  :class="menuIsOpen && 'menu-btn--open'">
-              <span class="menu-btn__bar"></span>
+            <button class="header__menu-btn menu-btn"
+                    @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
             </button>
-      
+        
 
-          <!--Menu principal-->
-          <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-              <ul class="langage">
-                <li class="langage__button"><button id="button__fr">fr</button></li>
-                <li class="langage__button"> <a href="projets_eng.html"><button id="button__eng">eng</button></a></li>
-              </ul>
-              <ul class="menu__list list-unstyled">
-                  <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
-                  <li class="menu__item"><a class="menu__link" href="8mars.html">Se battre pour le 8 mars</a></li>
-                  <li class="menu__item"><a class="menu__link" href="suffragettes.html">Les Suffragettes, réelle fiction féministe</a></li>
-                  <li class="menu__item"><a class="menu__link" href="plume.html">La plume comme arme</a></li>
-                  <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
-                  <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
-                  <li class="menu__item"><a class="menu__link" href="projets.html">Autres projets</a></li>
-              </ul>
-          </nav>
-          <!-- Fin du menu principal -->
-      </div>
+            <!--Menu principal-->
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="langage">
+                    <li class="langage__button"><a href="projets.html"><button class="button__fr--eng">fr</button></li></a>
+                    <li class="langage__button"><button class="button__eng--eng">eng</button></a></li>
+                </ul>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index_eng.html">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="8mars_eng.html">Fighting for 8th March</a></li>
+                    <li class="menu__item"><a class="menu__link" href="suffragette_eng.html">The Suffragettes, real feminist fiction</a></li>
+                    <li class="menu__item"><a class="menu__link" href="plume_eng.html">The pen as a weapon</a></li>
+                    <li class="menu__item"><a class="menu__link" href="glossaire_eng.html">Glossaire</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact_eng.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets_eng.html">Other projects</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </div>
     </header>
 
     <main>
 
         <!-- HEADER : Autres Projets -->
         <div id="scroll" class="top">
-            <h2 class="top__title--color">Autres projets</h2>
+            <h2 class="top__title--color">Other projects</h2>
             <img class="top__image" src="public/img/header_autres_projets.jpg" alt="Illustration de personnes travaillant ensemble">
           </div>
 
         <section class="text">
-            <p class="text__chapo--alternate">Retrouvez ici des projets traitant du même sujet, ayant une approche différente que ce soit par la thématique choisi ou bien par les œuvres sélectionnées. </p>
+            <p class="text__chapo--alternate">Here you will find projects dealing with the same subject, but with a different approach, either by the theme chosen or by the works selected.</p>
         
             <div class="project__left">
                 <a class="project__link" href="">
@@ -130,18 +132,18 @@
 
     <!-- Footer du site-->
     <footer>
-
+        
         <!--Image papier déchiré au format jpg emboitant l'ensemble du footer-->
         <img class="footer__bg" src="public/img/footer.png" alt="Papier déchiré">
         <!-- Image avec symbole féministe -->
         <img class="footer__ilu" src="public/img/symbol_feminist.png" alt="illustration d'un poing levé portant le symbole des féministes">
         
         <div class="footer__content">
-            <p class="footer__id">Paul Tresse <br> Groupe C2</p>
+            <p class="footer__id">Paul Tresse <br> C2 group</p>
             
             <!--Section des réseaux sociaux Facebook et Instagram cliquable sour format d'icone-->
             <div class="footer__social">   
-                <h3 class="footer__title">Me suivre</h3>
+                <h3 class="footer__title">Find me here</h3>
                 <ul class="footer__list list-unstyled">
                     <li><a href="https://facebook.com"><i class="icon-facebook"></i></a></li>
                     <li><a href="https://instagram.com"><i class="icon-instagram"></i></a></li>
@@ -152,14 +154,14 @@
             <!--Mailto-->
             <div class="footer__contact">
                 <address>
-                <a class="footer__title" href="mailto:paul.tresse@edu.univ-fcomte.fr"><h3>Contactez-nous ici</h3></a>
+                <a class="footer__title" href="mailto:paul.tresse@edu.univ-fcomte.fr"><h3>Keep a contact</h3></a>
                 </address>
             </div>
 
             <!--Texte de contextualisation avec un hyper en direction du site web MMI de Montbéliard-->
-            <p class="footer__condition">Projet réalisé dans le cadre d'une expérience pédagogique au <a href="http://mmimontbeliard.com/">département MMI de Montbéliard</a></p>
+            <p class="footer__condition">Project carried out as part of a pedagogical exercise in the <a href="http://mmimontbeliard.com/">MMI department of Montbéliard.</a></p>
         </div>
-        </footer>
+    </footer>
     
 </body>
 </html>
