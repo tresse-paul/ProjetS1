@@ -51,7 +51,7 @@ footer a {
     text-transform: uppercase;
     font-size: var(--small--text-bold);
     margin-left: 195px;
-    margin-top: 17px;
+    margin-top: 35px;
     width: 160px;
 }
 
@@ -80,10 +80,9 @@ footer a {
 }
 
 .footer__title--contact {
+    font-size: 1.17em;
     margin: 0;
     text-align: end;
-    margin-top: 17px;
-    margin-bottom: 17px;
 }
 
 

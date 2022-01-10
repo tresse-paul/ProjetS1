@@ -36,8 +36,8 @@
             <!--Menu principal-->
             <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
                 <ul class="langage">
-                    <li class="langage__button"><a href="8mars.html"><button class="button__fr--eng">fr</button></li></a>
-                    <li class="langage__button"><button class="button__eng--eng">eng</button></a></li>
+                    <li class="langage__button"><a href="8mars.html" class="button__fr--eng">fr</a></li>
+                    <li class="langage__button"><button class="button__eng--eng">eng</button></li>
                 </ul>
                 <ul class="menu__list list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="index_eng.html">Home</a></li>
@@ -90,7 +90,7 @@
         </section>
 
         <!-- Frise du féminisme -->
-        <section class="frise">
+        <div class="frise">
             <h4 class="text__titleh4--content">feminism frieze</h4>
             <img class="frise__ligne" src="public/img/Trace.png" alt="Ligne temporelle de la frise">
             
@@ -152,9 +152,10 @@
             <a href="#scroll">
                 <img class="hero__doubleScroll--reverse" src="public/img/down_arrow.svg" alt="flèche pointant vers le bas">
             </a>
-        </section>
+        </div>
 
         <!-- Cards -->
+        <div>
             <!-- Article : Les Suffragettes, réelle fiction féministe -->
             <article class="card">
                 <h3 class="card__title">Suffragettes, a real feminist fiction</h3>
@@ -174,7 +175,7 @@
                     <a class="card__link" href="plume_eng.html">Read</a>
                 </div>
             </article>
-        </section>
+        </div>
 
     </main>
 
@@ -204,7 +205,7 @@
             <!--Mailto-->
             <div class="footer__contact">
                 <address>
-                    <a class="footer__title--contact" href="mailto:paul.tresse@edu.univ-fcomte.fr"><h3>Keep a contact</h3></a>
+                    <a class="footer__title--contact" href="mailto:paul.tresse@edu.univ-fcomte.fr">Keep a contact</a>
                 </address>
             </div>
     
