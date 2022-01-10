@@ -37,7 +37,7 @@
     padding-left: 40%;
 }
 
-.hero__doubleScroll--reverse {
+.scrollTop {
     margin: 25px;
     padding-right: 40%;
     transform: rotate(180deg);

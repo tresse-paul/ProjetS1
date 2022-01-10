@@ -47,3 +47,16 @@ if (window.PointerEvent) {
 
   window.addEventListener('mouseup', gestureEnd);  
 }
+
+const button = document.querySelector('.scrollTop');
+const scrollElement = window.document.scrollingElement || window.document.body || window.document.documentElement;
+
+button.addEventListener('click', () => {
+  // use anime.js
+  anime({
+    targets: scrollElement,
+    scrollTop: 0,
+    duration: 500,
+    easing: 'easeInOutQuad'
+  });
+});

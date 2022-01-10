@@ -112,6 +112,7 @@
 
 .button__fr--eng {
     color: var(--russian--green);
+    text-decoration: none;
     text-transform: uppercase;
     font-size: var(--titre--h2);
     font-family: var(--font-sans-serif);
@@ -120,6 +121,7 @@
     border-right: solid 2px;
     border-right-color: var(--white);
     font-weight: bold;
+    padding-right: 5px;
 }
 
 #button__eng {
