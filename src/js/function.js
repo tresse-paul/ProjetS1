@@ -56,7 +56,7 @@ button.addEventListener('click', () => {
   anime({
     targets: scrollElement,
     scrollTop: 0,
-    duration: 500,
+    duration: 1000,
     easing: 'easeInOutQuad'
   });
 });
