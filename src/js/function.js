@@ -47,4 +47,3 @@ if (window.PointerEvent) {
 
   window.addEventListener('mouseup', gestureEnd);  
 }
-
