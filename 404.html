@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<title>404 - Page Non trouvée</title>
-<h1>Page Non trouvée</h1>
-<form action="https://duckduckgo.com/" method="GET" 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Non trouvée</title>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body class="bg__404">
+
+    <h1 class="error__title">404</h1>
+    <h2 class="error__subtitle">Page non trouvée</h2>
+    <form action="index.html" method="GET" 
     x-data="{ q:'', }" 
     x-on:submit="q = q + ' site:mmimontbeliard.com'">
-    <label for="q">Text à chercher :</label>
-    <input type="text" id="q" name="q" x-model="q">
-    <button type="submit">Rechercher</button>
-</form>
+    <button class="error__button" type="submit">Retour à l'accueil</button>
+    </form>
+
+    <img class="error__logo" src="public/img/MMI_dut_small_white.png" alt="Logo du dut mmi Montbéliard">
+    
+</body>
+</html>
