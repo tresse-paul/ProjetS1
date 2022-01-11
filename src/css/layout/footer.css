@@ -53,6 +53,8 @@ footer a {
     margin-left: 195px;
     margin-top: 35px;
     width: 160px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 

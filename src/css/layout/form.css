@@ -56,3 +56,7 @@ label {
     font-size: var(--figcaption);
     margin: 5px 0px 0px 0px;
 }
+
+.form__captcha {
+    margin-top: 10px;
+}
