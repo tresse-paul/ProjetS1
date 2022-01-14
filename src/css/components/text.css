@@ -109,3 +109,63 @@
     color: var(--space--cadet);
     font-weight: bold;
 }
+
+#SPD {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold; 
+}
+
+#SPD_eng {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
+}
+
+#ideologie {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
+}
+
+#ideology {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
+}
+
+#suffragettes {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
+}
+
+#suffragette {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
+}
+
+#revendiquer {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
+}
+
+#claim {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
+}
+
+#patriarcat {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
+}
+
+#patriarchy {
+    font-size: var(--base-bold);
+    color: var(--space--cadet);
+    font-weight: bold;
+}
